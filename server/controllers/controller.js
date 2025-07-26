@@ -2,11 +2,10 @@ const model = require('../models/model')
 
 // post request to create a new category 
 async function create_Categories(req, res) {
+    const {type, color} = req.body
     const create = new model.Categories({
-        type: "Savings",
-        color: '#1F3B5C'
+        type, color
     })
-
 
     await create.save()
     res.json(create)
