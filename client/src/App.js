@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Graph from './components/Graph';
 import Form from './components/Form';
